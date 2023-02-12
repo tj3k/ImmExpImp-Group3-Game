@@ -1,4 +1,0 @@
-repository "ImmExpImp-VRGame@uwsVR@cloud"
-  path "/"
-    br "/main"
-    co "/main"
