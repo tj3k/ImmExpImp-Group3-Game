@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BuilderProjectSettings
   m_EditorClassIdentifier: 
   IsFirstTimeStarted: 0
-  ProjectBuilderVersion: '2.7.0
+  ProjectBuilderVersion: '2.8.0
 
 '
   OpenXRControllerProfiles: []

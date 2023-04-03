@@ -12,4 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03bbdf34419fb2843a3ebd1a879d4632, type: 3}
   m_Name: SceneObjectTags
   m_EditorClassIdentifier: 
-  tags: []
+  tags:
+  - label: ClimbCube
+    guidString: e204ab22-4fe0-4a5e-ab6f-3e15d5c1a121

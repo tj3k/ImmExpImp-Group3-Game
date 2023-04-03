@@ -319,14 +319,16 @@ namespace VRBuilder.Editor.UI.Graphics
 
         private void OnElementsPasted(string operationName, string data)
         {
-            IProcessSerializer serializer = new NewtonsoftJsonProcessSerializer();
+            IProcessSerializer serializer = new NewtonsoftJsonProcessSerializerV3();
             IProcess clipboardProcess = null;
 
             try
             {
                 clipboardProcess = serializer.ProcessFromByteArray(Encoding.UTF8.GetBytes(data));
             }
+#pragma warning disable 168
             catch (JsonReaderException exception)
+#pragma warning restore
             {
                 EditorUtility.DisplayDialog("Excessive serialization depth", "It was not possible to paste the clipboard data as it contains too many nested entities.", "Ok");
                 return;
@@ -376,19 +378,14 @@ namespace VRBuilder.Editor.UI.Graphics
             pasteCounter = 0;
             IProcess clipboardProcess = EntityFactory.CreateProcess("Clipboard Process");
 
-            List<IStep> steps = elements.Where(node => node is ProcessGraphNode)
+            clipboardProcess.Data.FirstChapter.Data.Steps = elements.Where(node => node is ProcessGraphNode)
                 .Select(node => ((ProcessGraphNode)node).EntryPoint)
                 .Where(entryPoint => entryPoint != null)
                 .ToList();
 
-            foreach(IStep step in steps)
-            {                
-                clipboardProcess.Data.FirstChapter.Data.Steps.Add(step);
-            }
+            IProcessSerializer serializer = new NewtonsoftJsonProcessSerializerV3();
 
-            IProcessSerializer serializer = new NewtonsoftJsonProcessSerializer();
-
-            byte[] bytes = serializer.ProcessToByteArray(clipboardProcess);
+            byte[] bytes = serializer.ProcessToByteArray(clipboardProcess.Clone());
 
             return Encoding.UTF8.GetString(bytes);
         }

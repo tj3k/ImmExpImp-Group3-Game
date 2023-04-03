@@ -15,7 +15,5 @@ MonoBehaviour:
   Provider: MicrosoftSapiTextToSpeechProvider
   Language: En
   Voice: Male
-  UseStreamingAssetFolder: 1
-  SaveAudioFilesToStreamingAssets: 0
   StreamingAssetCacheDirectoryName: TextToSpeech
   Auth: 
