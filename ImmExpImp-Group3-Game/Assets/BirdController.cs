@@ -51,8 +51,8 @@ public class BirdController : MonoBehaviour
                     birdAni.SetBool("peck", true);
 
 
+                     }
                 }
-            }
             
 
      }
