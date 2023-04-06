@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="efc94b48-a7b1-484b-9281-74d2336d1c32" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ImmExpImp-Group3-Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ImmExpImp-Group3-Game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/3_Bathroom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/3_Bathroom.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/nextLevel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/nextLevel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680801060921</updated>
-      <workItem from="1680801063825" duration="4051000" />
+      <workItem from="1680801063825" duration="4766000" />
     </task>
     <servers />
   </component>
