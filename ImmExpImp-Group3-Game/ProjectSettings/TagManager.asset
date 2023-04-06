@@ -10,6 +10,8 @@ TagManager:
   - lb_groundTarget
   - lb_perchTarget
   - object
+  - slingshot
+  - Climbable
   layers:
   - Default
   - TransparentFX
