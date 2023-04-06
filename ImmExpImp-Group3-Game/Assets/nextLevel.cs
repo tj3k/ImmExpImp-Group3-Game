@@ -16,10 +16,14 @@ public class nextLevel : MonoBehaviour
     {
         
     }
-    public void nextlvl()
+    public void MainMenu()
     {
-     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(0);
+    }
 
+    public void quitgame()
+    {
+        Application.Quit();
     }
     private void OnTriggerEnter(Collider other)
     {
