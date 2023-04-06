@@ -12,6 +12,7 @@ TagManager:
   - object
   - slingshot
   - Climbable
+  - ShipPart
   layers:
   - Default
   - TransparentFX
