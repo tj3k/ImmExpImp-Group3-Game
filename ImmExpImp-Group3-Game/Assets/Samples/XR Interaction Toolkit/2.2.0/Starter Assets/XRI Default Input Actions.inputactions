@@ -97,6 +97,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Velocity_L_Build",
+                    "type": "Button",
+                    "id": "62d9d7e8-2be1-48ac-8d2b-99a41b07745d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -218,6 +227,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Velocity_L",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5b590b2d-92ff-41ac-9a0b-b9bcce918b19",
+                    "path": "<XRController>{LeftHand}/deviceVelocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Velocity_L",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "34e79b3c-19ab-4e3c-8bd3-26f1010d8cde",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Velocity_L_Build",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -744,6 +775,17 @@
                     "name": "",
                     "id": "0e7b83a9-1024-4bba-bf71-6fdd8ac3b79f",
                     "path": "<OculusTouchController>{RightHand}/devicePose/velocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Velocity_R",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b4bd9542-b1b7-46b7-a3ba-69223135cd4e",
+                    "path": "<XRController>{RightHand}/deviceVelocity",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
