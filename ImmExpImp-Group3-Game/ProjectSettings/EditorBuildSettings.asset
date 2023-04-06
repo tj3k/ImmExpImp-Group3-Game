@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/2_LivingRoom_PATHED.unity
     guid: 7e0caef0b81b43a469288a03b10ebe5d
   - enabled: 1
-    path: Assets/Scenes/3_Bathroom.unity
-    guid: d60c3470ec6039c40b1ee82e0c8b9f1c
+    path: Assets/Scenes/3_Bathroom_PATHED.unity
+    guid: 193c0738c8343fc4db6aeb9430c79c71
   - enabled: 1
     path: Assets/Scenes/4_End.unity
     guid: 5a257e5c4160ee1448e077a8809e488d
