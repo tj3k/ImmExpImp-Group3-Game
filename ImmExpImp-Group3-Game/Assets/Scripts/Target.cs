@@ -5,11 +5,20 @@ public class Target : MonoBehaviour, IArrowHittable
     public float forceAmount = 1.0f;
     public Material otherMaterial = null;
 
+    private new Rigidbody rigidbody;
+
+    public void Awake()
+    {
+        rigidbody = GetComponent<Rigidbody>();
+
+    }
+
     public void Hit(Arrow arrow)
     {
-        ApplyMaterial();
         ApplyForce(arrow);
         DisableCollider(arrow);
+        ApplyMaterial();
+        rigidbody.constraints = RigidbodyConstraints.None;
     }
 
     private void ApplyMaterial()
