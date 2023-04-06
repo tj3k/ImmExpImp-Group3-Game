@@ -5,17 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class nextLevel : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void MainMenu()
     {
         SceneManager.LoadScene(0);
@@ -25,9 +14,10 @@ public class nextLevel : MonoBehaviour
     {
         Application.Quit();
     }
+
     private void OnTriggerEnter(Collider other)
     {
-      if (other.gameObject.tag == "Player")
+        if (other.gameObject.CompareTag("Player"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             Debug.Log("hit1");
